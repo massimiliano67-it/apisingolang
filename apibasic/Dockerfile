@@ -9,7 +9,7 @@ WORKDIR /app
 # Retrieve application dependencies using go modules.
 # Allows container builds to reuse downloaded dependencies.
 COPY apibasic/go.* ./
-RUN apibasic/go mod download
+RUN go mod download
 
 # Copy local code to the container image.
 COPY . ./
