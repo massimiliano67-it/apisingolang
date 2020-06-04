@@ -1,7 +1,8 @@
+#cloudbuild for apimux
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '--no-cache', '-t', 'gcr.io/cloud-run-cd/github.com/massimiliano67-it/apisingolang:$COMMIT_SHA','apimux']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/cloud-run-cd/github.com/massimiliano67-it/apisingolang:$COMMIT_SHA']
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['beta', 'run', 'deploy', 'apibasic', '--image=gcr.io/cloud-run-cd/github.com/massimiliano67-it/apisingolang:$COMMIT_SHA','--platform=managed', '--region=us-central1']
+  args: ['beta', 'run', 'deploy', 'apimux', '--image=gcr.io/cloud-run-cd/github.com/massimiliano67-it/apisingolang:$COMMIT_SHA','--platform=managed', '--region=us-central1']

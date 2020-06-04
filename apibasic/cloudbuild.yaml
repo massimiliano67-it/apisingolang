@@ -1,3 +1,4 @@
+#cloudbuid for apibasic
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '--no-cache', '-t', 'gcr.io/cloud-run-cd/github.com/massimiliano67-it/apisingolang:$COMMIT_SHA','apibasic']
