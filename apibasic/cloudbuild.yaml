@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/cloud-run-cd/github.com/massimiliano67-it/apisingolang:$COMMIT_SHA', -f 'apibasic/Dockerfile','apibasic']
+  args: ['build', '-t', 'gcr.io/cloud-run-cd/github.com/massimiliano67-it/apisingolang:$COMMIT_SHA', -f 'apibasic/Dockerfile','apibasic/Dockerfile']
 #- name: 'gcr.io/cloud-builders/docker'
 #  args: ['push', 'gcr.io/cloud-run-cd/github.com/massimiliano67-it/apisingolang:$COMMIT_SHA']
 #- name: 'gcr.io/cloud-builders/gcloud'
