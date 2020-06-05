@@ -7,14 +7,14 @@ import (
 var Music = map[string]*music.Music{
 	"01D3XZ3ZHCP3KG9VT4FGAD8KDR": {
 		ID:     "01D3XZ3sZHcCcP3KG9SSVT4FGAD8KDR",
-		Name:   "Massimisssssliano",
+		Name:   "Massimiliano",
 		Artist: "one",
 		Image:  "https://storage.googleapis.com/gopherizeme.appspot.com/gophers/0ceb2c10fc0c30575c18ff1defa1ffd41501bc62.png",
 		Year:   "1981",
 	},
 	"01D3XZ7CN92AKS9HAPSZ4D5DP9": {
 		ID:     "01D3XZ7CN92AKS9HAPSZ4D5DP9",
-		Name:   "Chiccsssso1",
+		Name:   "Mario",
 		Artist: "two",
 		Image:  "https://storage.googleapis.com/gopherizeme.appspot.com/gophers/13c7d425111a501600db8587b52bb292836c5bee.png",
 		Year:   "1982",
