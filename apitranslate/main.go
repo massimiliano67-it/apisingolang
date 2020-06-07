@@ -76,7 +76,7 @@ func translate(w http.ResponseWriter, r *http.Request) {
 func main() {
 	router := mux.NewRouter()
 	router.HandleFunc("/translate", translate).Methods("POST")
-	fmt.Println("Listen on port 8080....")
+	fmt.Println("Listen on port 8080.....")
 	http.ListenAndServe(":8080", router)
 
 }
