@@ -68,7 +68,7 @@ func translate(w http.ResponseWriter, r *http.Request) {
 	if err := translateText(&buf, "cloud-run-cd", message.SOURCELANG, message.TARGETLANG, message.Body); err != nil {
 		message.TRANS = err.Error()
 	} else {
-		message.TRANS = "++" + buf.String()
+		message.TRANS = buf.String()
 	}
 	json.NewEncoder(w).Encode(&message)
 }
