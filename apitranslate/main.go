@@ -42,7 +42,7 @@ func translateText(w io.Writer, projectID string, sourceLang string, targetLang 
 
 	// Display the translation for each input text provided
 	for _, translation := range resp.GetTranslations() {
-		fmt.Fprintf(w, "Translated text: %v\n", translation.GetTranslatedText())
+		fmt.Fprintf(w, "%v", translation.GetTranslatedText())
 	}
 
 	return nil
